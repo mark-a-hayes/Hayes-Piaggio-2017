@@ -1,0 +1,33 @@
+Metadata for Hayes and Piaggio's paper "Ensemble species distribution models and maps to evaluate risk of invasion into the United States 
+by a rabies vector species". 
+
+Prepared by Mark A. Hayes, June 22, 2017. 
+
+The csv "Hayes and Piaggio data.csv" contains the following information, derived using the VisTrails-SAHM software and the 
+analysis described  in the methods section (this is a modified version of the "merged dataset file" produced by the 
+VisTrails-SAHM software):
+
+Column A, "x": Longitude of the location in decimal degree, expressed to 3 decimal places.
+Column B, "y": Latitude of the location in cedimal degree, expressed to 3 decimal places.  
+Column C, "response": "1" means the location was occupied by vampire bat (Desmodus rotundus). 
+Column D, "bio2": Estimated mean diurnal temperature range (degrees C*10). The worldwide data is available here: http://www.worldclim.org/current.
+Column E, "bio6": Estimated minimum temperature of the coldest month (degrees C*10). The worldwide data is available here: http://www.worldclim.org/current.
+Column F, "bio12": Estimated annual precipitation (mm). The worldwide data is available here: http://www.worldclim.org/current.
+Column G, "bio15": Estimated precipitation seasonality (coefficient of variation). The worldwide data is available here: http://www.worldclim.org/current. 
+Column H, "bio19": Estimated precipitation of the coldest quarter (mm). The worldwide data is available here: http://www.worldclim.org/current.  
+
+This analysis should be independently reproducible using the template, the occurrence locations in the csv (the x and y coordinates of the 1's), 
+the predictor data available at the worldclim.org website, and following the methods section of the manuscript. 
+Dues to its large size, the tif "Hayes and Piaggio template.tif" has not been uploaded here. This is the North American modeling template used for the analysis. 
+The spatial reference for the template is the WGS 84 datum. Characteristics of the template are described in the methods. 
+See the manuscript text for full descriptions of compiliation and vetting of Vampire bat data, selection of predictor variables, and 
+final analysis. The full set of VisTrails-SAHM files, including the template, and associated files and data considered and used in this analysis can be obtained 
+from Mark Hayes (hayes.a.mark@gmail.com). 
+
+Information about the VisTrails-SAHM software used can be obtained here: 
+
+https://www.fort.usgs.gov/sites/default/files/RAM/SAHM.html
+
+The VisTrails-SAHM software can be accessed and downloaded free of charge at the USGS's ScienceBase Catalog here:
+
+https://www.sciencebase.gov/catalog/item/55e9d780e4b0dacf699e798a
