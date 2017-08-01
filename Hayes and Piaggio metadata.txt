@@ -1,6 +1,6 @@
-Metadata for Hayes and Piaggio's paper "What’s old is new again: assessing invasion potential of a rabies virus vector". 
+Metadata and comments for Hayes and Piaggio's paper "What’s old is new again: assessing invasion potential of a rabies virus vector". 
 
-Prepared by Mark A. Hayes, July 6, 2017. 
+Prepared by Mark A. Hayes, August 1, 2017. 
 
 The csv "Hayes and Piaggio data.csv" contains the following information, derived using the VisTrails-SAHM software and the 
 analysis described  in the methods section (this is a modified version of the "merged dataset file" produced by the 
@@ -15,13 +15,19 @@ Column F, "bio12": Estimated annual precipitation (mm). The worldwide data is av
 Column G, "bio15": Estimated precipitation seasonality (coefficient of variation). The worldwide data is available here: http://www.worldclim.org/current. 
 Column H, "bio19": Estimated precipitation of the coldest quarter (mm). The worldwide data is available here: http://www.worldclim.org/current.  
 
-This analysis should be independently reproducible using the template, the occurrence locations in the csv (the x and y coordinates of the 1's), 
-the predictor data available at the worldclim.org website, and following the methods section of the manuscript. 
-Due to its large size, the tiff "Hayes and Piaggio template.tif" has not been uploaded here. This is the North American modeling template used for the analysis. 
+This analysis should be independently reproducible using the template, the occurrence locations in the csv 
+(the x and y coordinates of the 1's), the predictor data available at the worldclim.org website, 
+and following the methods section of the manuscript. Due to its large size, the tiff "Hayes and Piaggio template.tif" 
+has not been uploaded here. This is the North American modeling template used for the analysis. 
 The spatial reference for the template is the WGS 84 datum. Characteristics of the template are described in the methods. 
 See the manuscript text for full descriptions of compiliation and vetting of Vampire bat data, selection of predictor variables, and 
-final analysis. The full set of VisTrails-SAHM files, including the template, and associated files and data considered and used in this analysis can be obtained 
-from Mark Hayes (hayes.a.mark@gmail.com). 
+final analysis. The full set of VisTrails-SAHM files, including the template, and associated files and data considered and used in this analysis can be obtained from Mark Hayes (hayes.a.mark@gmail.com).
+
+The R file "spatial_autocorrelation_variograms" shows how distances among occurrence locations and spatial autocorrelation
+were analyzed. To reproduce this analysis, open the R file, and follow the comments throughout, using the various R packages.
+This file first looks at distances among occurrence locations (these distances tend to be large, e.g., > 50 km),
+then uses semi-variograms to look at patterns of spatial autocorrelation in the data, which suggests that autocorrelation
+likely is not an issue in this dataset, as analyzed using ~5 km x 5 km grid cell size. 
 
 Information about the VisTrails-SAHM software used can be obtained here: 
 
