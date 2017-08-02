@@ -23,11 +23,11 @@ The spatial reference for the template is the WGS 84 datum. Characteristics of t
 See the manuscript text for full descriptions of compiliation and vetting of Vampire bat data, selection of predictor variables, and 
 final analysis. The full set of VisTrails-SAHM files, including the template, and associated files and data considered and used in this analysis can be obtained from Mark Hayes (hayes.a.mark@gmail.com).
 
-The R file "spatial_autocorrelation_variograms" shows how distances among occurrence locations and spatial autocorrelation
-were analyzed. To reproduce this analysis, open the R file, and follow the comments throughout, using the various R packages.
-This file first looks at distances among occurrence locations (these distances tend to be large, e.g., > 50 km),
-then uses semi-variograms to look at patterns of spatial autocorrelation in the data, which suggests that autocorrelation
-likely is not an issue in this dataset, as analyzed using ~5 km x 5 km grid cell size. 
+The R file "Distance and correlation analysis" shows how distances among occurrence locations and spatial autocorrelation
+were analyzed. To reproduce this analysis, open the R file, and follow the comments throughout, using the R package 'spatstat'.
+This file first looks at pTTERNS OF distances among occurrence locations, then uses pair correlation function plots to look at 
+patterns of spatial autocorrelation in the data, which suggests that autocorrelation likely is not an issue in this dataset, 
+as analyzed using ~5 km x 5 km grid cell size. 
 
 Information about the VisTrails-SAHM software used can be obtained here: 
 
